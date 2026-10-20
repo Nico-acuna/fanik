@@ -158,6 +158,13 @@
   .case-visual .roof{
     width:70%;
   }
+  .cases{display:flex;flex-direction:column;gap:24px;}
+  .case-visual svg{width:70%;}
+  .case-link{
+    display:inline-flex;align-items:center;gap:6px;margin-top:24px;
+    color:var(--lila);font-weight:700;font-size:14px;
+  }
+  .case-link:hover{color:#fff;}
 
   /* ---------- team ---------- */
   section.team{padding:0 0 100px;}
@@ -313,23 +320,67 @@
         <span class="eyebrow" data-i18n="projEyebrow">Proyectos</span>
         <h2 data-i18n="projH2">Algo de lo que venimos haciendo.</h2>
       </div>
-      <div class="case">
-        <div>
-          <span class="case-tag" data-i18n="caseTag">Roofing · Sur de Florida</span>
-          <h3>Assured Contracting</h3>
-          <p data-i18n="caseP">Desarrollo web, posicionamiento local y gestión de redes para una empresa de roofing y protección contra huracanes con base en Oakland Park, FL.</p>
-          <div class="stack">
-            <span data-i18n="stack1">Diseño Web</span>
-            <span data-i18n="stack2">SEO Local</span>
-            <span data-i18n="stack3">Redes Sociales</span>
+      <div class="cases">
+        <div class="case">
+          <div>
+            <span class="case-tag" data-i18n="caseTag">Roofing · Sur de Florida</span>
+            <h3>Assured Contracting</h3>
+            <p data-i18n="caseP">Desarrollo web, posicionamiento local y gestión de redes para una empresa de roofing y protección contra huracanes con base en Oakland Park, FL.</p>
+            <div class="stack">
+              <span data-i18n="stack1">Diseño Web</span>
+              <span data-i18n="stack2">SEO Local</span>
+              <span data-i18n="stack3">Redes Sociales</span>
+            </div>
+          </div>
+          <div class="case-visual">
+            <svg class="roof" viewBox="0 0 200 140" fill="none">
+              <polygon points="100,14 190,80 10,80" stroke="#9B4DE8" stroke-width="3" fill="none"/>
+              <polygon points="100,44 145,80 55,80" fill="#9B4DE8" opacity="0.9"/>
+              <rect x="30" y="80" width="140" height="46" stroke="rgba(255,255,255,0.25)" stroke-width="2" fill="none"/>
+            </svg>
           </div>
         </div>
-        <div class="case-visual">
-          <svg class="roof" viewBox="0 0 200 140" fill="none">
-            <polygon points="100,14 190,80 10,80" stroke="#9B4DE8" stroke-width="3" fill="none"/>
-            <polygon points="100,44 145,80 55,80" fill="#9B4DE8" opacity="0.9"/>
-            <rect x="30" y="80" width="140" height="46" stroke="rgba(255,255,255,0.25)" stroke-width="2" fill="none"/>
-          </svg>
+
+        <div class="case">
+          <div>
+            <span class="case-tag" data-i18n="caseTag2">CrossFit · App de Planificación</span>
+            <h3>Wargos</h3>
+            <p data-i18n="caseP2">Aplicación web de planificación diaria para boxes de CrossFit, pensada para que coaches y atletas organicen el entrenamiento del día desde el celular.</p>
+            <div class="stack">
+              <span data-i18n="stack4">App Web</span>
+              <span data-i18n="stack5">UX/UI</span>
+              <span data-i18n="stack6">Desarrollo</span>
+            </div>
+            <a href="https://wargos.pages.dev/" class="case-link" target="_blank" rel="noopener" data-i18n="caseLink">Ver sitio ↗</a>
+          </div>
+          <div class="case-visual">
+            <svg viewBox="0 0 200 140" fill="none">
+              <rect x="22" y="60" width="156" height="12" rx="6" fill="#9B4DE8"/>
+              <rect x="6" y="36" width="26" height="60" rx="7" stroke="#9B4DE8" stroke-width="3"/>
+              <rect x="168" y="36" width="26" height="60" rx="7" stroke="#9B4DE8" stroke-width="3"/>
+              <rect x="34" y="48" width="14" height="36" rx="4" fill="#9B4DE8" opacity="0.55"/>
+              <rect x="152" y="48" width="14" height="36" rx="4" fill="#9B4DE8" opacity="0.55"/>
+            </svg>
+          </div>
+        </div>
+
+        <div class="case">
+          <div>
+            <span class="case-tag" data-i18n="caseTag3">Fitness & Bienestar · Programas Online</span>
+            <h3>Pulso by Juli Bianchi</h3>
+            <p data-i18n="caseP3">Plataforma de programas de entrenamiento online para mujeres con poco tiempo, pensada para entrenar en casa o en el gimnasio al ritmo de cada una.</p>
+            <div class="stack">
+              <span data-i18n="stack4">App Web</span>
+              <span data-i18n="stack5">UX/UI</span>
+              <span data-i18n="stack6">Desarrollo</span>
+            </div>
+            <a href="https://www.julibianchi.com.ar" class="case-link" target="_blank" rel="noopener" data-i18n="caseLink">Ver sitio ↗</a>
+          </div>
+          <div class="case-visual">
+            <svg viewBox="0 0 200 140" fill="none">
+              <polyline points="10,70 50,70 66,38 86,100 106,18 126,70 190,70" stroke="#9B4DE8" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
         </div>
       </div>
     </div>
@@ -437,6 +488,14 @@
       stack1: "Diseño Web",
       stack2: "SEO Local",
       stack3: "Redes Sociales",
+      caseTag2: "CrossFit · App de Planificación",
+      caseP2: "Aplicación web de planificación diaria para boxes de CrossFit, pensada para que coaches y atletas organicen el entrenamiento del día desde el celular.",
+      caseTag3: "Fitness & Bienestar · Programas Online",
+      caseP3: "Plataforma de programas de entrenamiento online para mujeres con poco tiempo, pensada para entrenar en casa o en el gimnasio al ritmo de cada una.",
+      stack4: "App Web",
+      stack5: "UX/UI",
+      stack6: "Desarrollo",
+      caseLink: "Ver sitio ↗",
       teamEyebrow: "Quiénes somos",
       teamH2: "Tres personas, sin intermediarios.",
       role1: "Desarrollador Web",
@@ -475,6 +534,14 @@
       stack1: "Web Design",
       stack2: "Local SEO",
       stack3: "Social Media",
+      caseTag2: "CrossFit · Planning App",
+      caseP2: "Daily planning web app for CrossFit boxes, built so coaches and athletes can organize the day's workout right from their phone.",
+      caseTag3: "Fitness & Wellness · Online Programs",
+      caseP3: "Online training-program platform for women with limited time, built to train at home or at the gym, at each person's own pace.",
+      stack4: "Web App",
+      stack5: "UX/UI",
+      stack6: "Development",
+      caseLink: "Visit site ↗",
       teamEyebrow: "Who we are",
       teamH2: "Three people, no middlemen.",
       role1: "Web Developer",
